@@ -1,0 +1,72 @@
+{
+    "-NMPn6X726JV4dz1sBhX": {
+      "firebaseKey": "-NMPn6X726JV4dz1sBhX",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/20170213_Villanova-Depaul_Jalen_Brunson_in_the_front_court_%28cropped%29.jpg/440px-20170213_Villanova-Depaul_Jalen_Brunson_in_the_front_court_%28cropped%29.jpg",
+      "name": "Jalen Brunson",
+      "role": "Point Guard",
+      "uid": ""
+    },
+    "-NMPn6X9O0C0d3uO7fKL": {
+      "firebaseKey": "-NMPn6X9O0C0d3uO7fKL",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Tom_Thibodeau_cropped.jpg/440px-Tom_Thibodeau_cropped.jpg",
+      "name": "Tom Thibodeau",
+      "role": "Head Coach",
+      "uid": ""
+    },
+    "-NMPn6XBz5_U6P2GACER": {
+      "firebaseKey": "-NMPn6XBz5_U6P2GACER",
+      "image": "https://www.msgentertainment.com/wp-content/uploads/2021/09/JamesDolan-Website.png",
+      "name": "James Dolan",
+      "role": "Owner",
+      "uid": ""
+    },
+    "-NMPn6XDiHbpsAckrUtW": {
+      "firebaseKey": "-NMPn6XDiHbpsAckrUtW",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Julius_Randle_with_Lakers.jpg/440px-Julius_Randle_with_Lakers.jpg",
+      "name": "Julius Randle",
+      "role": "Forward",
+      "uid": ""
+    },
+    "-NMPn6XF1uGQ4QqSDAnn": {
+      "firebaseKey": "-NMPn6XF1uGQ4QqSDAnn",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Brooklyn_Nets_vs_NY_Knicks_2018-10-03_td_176a_-_1st_Quarter.jpg/440px-Brooklyn_Nets_vs_NY_Knicks_2018-10-03_td_176a_-_1st_Quarter.jpg",
+      "name": "Mitchell Robinson",
+      "role": "Center",
+      "uid": ""
+    },
+    "-NMPn6XHoBShwQ4hJ54b": {
+      "firebaseKey": "-NMPn6XHoBShwQ4hJ54b",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/RJ_Barrett_Knicks_%28cropped%29.jpg/440px-RJ_Barrett_Knicks_%28cropped%29.jpg",
+      "name": "RJ Barrett",
+      "role": "Shooting Guard",
+      "uid": ""
+    },
+    "-NMPn6XICSFejus2R0fa": {
+      "firebaseKey": "-NMPn6XICSFejus2R0fa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Obi_Toppin_%282022_All-Star_Weekend%29_%28cropped%29.jpg/440px-Obi_Toppin_%282022_All-Star_Weekend%29_%28cropped%29.jpg",
+      "name": "Obi Toppin",
+      "role": "Forward",
+      "uid": ""
+    },
+    "-NMPn6XKx8fHij2pt9KK": {
+      "firebaseKey": "-NMPn6XKx8fHij2pt9KK",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Rose-20190120_%28cropped%29.jpg/440px-Rose-20190120_%28cropped%29.jpg",
+      "name": "Derrick Rose",
+      "role": "Point Guard",
+      "uid": ""
+    },
+    "-NMPn6XMGxgBg_ZHzmJ3": {
+      "firebaseKey": "-NMPn6XMGxgBg_ZHzmJ3",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Cam_Reddish_2021.jpg/440px-Cam_Reddish_2021.jpg",
+      "name": "Cam Reddish",
+      "role": "Small Forward",
+      "uid": ""
+    },
+    "-NMPn6XOZfEWhUOnUIDA": {
+      "firebaseKey": "-NMPn6XOZfEWhUOnUIDA",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/20171127_FIBA_WCQ_2019_AUT-GER_Isaiah_Hartenstein_850_7283.jpg/440px-20171127_FIBA_WCQ_2019_AUT-GER_Isaiah_Hartenstein_850_7283.jpg",
+      "name": "Isaiah Hartenstein",
+      "role": "Center",
+      "uid": ""
+    }
+  }
