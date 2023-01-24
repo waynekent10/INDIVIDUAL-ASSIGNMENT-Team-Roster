@@ -35,13 +35,13 @@ function MemberForm({ obj }) {
     e.preventDefault();
     if (obj.firebaseKey) {
       updateTeamMember(formInput)
-        .then(() => router.push('/'));
+        .then(() => router.push('/team'));
     } else {
       const payload = { ...formInput, uid: user.uid };
       createTeamMember(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
         updateTeamMember(patchPayload).then(() => {
-          router.push('/');
+          router.push('/team');
         });
       });
     }

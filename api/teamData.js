@@ -65,7 +65,7 @@ const deleteMember = (firebaseKey) => new Promise((resolve, reject) => {
     },
    })
    .then((response) => response.json())
-   .then((data) => resolve('deleted'))
+   .then((data) => resolve(data))
    .catch(reject);
 });
 
@@ -81,6 +81,20 @@ const getSingleMember = (firebaseKey) => new Promise((resolve, reject) => {
    .catch(reject);
 });
 
+const getTheTeam = (uid) => new Promise((resolve, reject) => {
+    fetch(`${endpoint}/roster.json?orderBy"uid"andequalTo="${uid}"`, {
+        method:'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          },
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            const favoriteMember = Object.values(data).filter((item) => item.member);
+            resolve(favoriteMember);
+        })
+        .catch(reject);
+    });
 export {
     getTeamMembers,
     createTeamMember,
@@ -88,4 +102,5 @@ export {
     updateTeamMember,
     deleteMember,
     getSingleMember,
+    getTheTeam
 };
