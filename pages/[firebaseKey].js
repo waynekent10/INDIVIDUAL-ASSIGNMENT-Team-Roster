@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Image } from 'react-bootstrap';
-import { ViewMemberDetails } from '../../api/mergedData';
+import { ViewMemberDetails } from '../api/mergedData';
 
 export default function ViewMember() {
   const [memberDetails, setMemberDetails] = useState({});

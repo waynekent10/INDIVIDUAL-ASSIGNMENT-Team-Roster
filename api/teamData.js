@@ -90,8 +90,8 @@ const getTheTeam = (uid) => new Promise((resolve, reject) => {
         })
         .then((response) => response.json())
         .then((data) => {
-            const favoriteMember = Object.values(data).filter((item) => item.member);
-            resolve(favoriteMember);
+            const roleplayers = Object.values(data).filter((item) => item.role);
+            resolve(roleplayers);
         })
         .catch(reject);
     });
