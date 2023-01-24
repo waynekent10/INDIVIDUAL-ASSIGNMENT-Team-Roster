@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import PropTypes from 'prop-types';
 import Link from 'next/link';
 import {
   Navbar, Container, Nav, Button,
@@ -24,11 +23,8 @@ export default function NavBar() {
             <Link passHref href="/team">
               <Nav.Link>Team</Nav.Link>
             </Link>
-            <Link passHref href="/new">
-              <Nav.Link>Add a Member</Nav.Link>
-            </Link>
-            <Link passHref href="/profile">
-              <Nav.Link>Profile</Nav.Link>
+            <Link passHref href="/team/new">
+              <Nav.Link>New</Nav.Link>
             </Link>
             <Button variant="danger" onClick={signOut}>Sign Out</Button>
           </Nav>
@@ -37,10 +33,3 @@ export default function NavBar() {
     </Navbar>
   );
 }
-
-NavBar.propTypes = {
-  user: PropTypes.shape({
-    displayName: PropTypes.string,
-    photoUrl: PropTypes.string,
-  }).isRequired,
-};
