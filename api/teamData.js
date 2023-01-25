@@ -18,7 +18,8 @@ const getTeamMembers = (uid) => new Promise((resolve, reject) => {
     } else {
       resolve([]);
     }
-  }).catch(reject);
+  })
+  .catch(reject);
 });
 
 const createTeamMember = (payload) => new Promise((resolve, reject) => {
