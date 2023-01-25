@@ -1,6 +1,5 @@
+import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { Button } from 'react-bootstrap';
 import { getTeamMembers } from '../api/teamData';
 import { useAuth } from '../utils/context/authContext';
 import PlayerCard from '../components/PlayerCard';
@@ -19,17 +18,18 @@ function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div className="text-center my-4">
-      <Link href="/new" passHref>
-        <Button>Add a Member</Button>
-      </Link>
-      <div className="d-flex flex-wrap">
-        {members.map((member) => (
-          <PlayerCard key={member.firebaseKey} memberObj={member} onUpdate={getAllTeamMembers} />
-        ))}
+    <>
+      <Head>
+        <title>Now! Heres your Organization!</title>
+      </Head>
+      <div className="text-center my-4">
+        <div className="d-flex flex-wrap">
+          {members.map((member) => (
+            <PlayerCard key={member.firebaseKey} memberObj={member} onUpdate={getAllTeamMembers} />
+          ))}
+        </div>
       </div>
-
-    </div>
+    </>
   );
 }
 export default Home;

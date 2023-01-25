@@ -5,7 +5,7 @@ const endpoint = clientCredentials.databaseURL;
 
 //Get All members on the Roster
 const getTeamMembers = (uid) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/roster.json?orderBy"uid"andequalTo="${uid}"`, {
+  fetch(`${endpoint}/rosters.json?orderBy"uid"andequalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -17,7 +17,7 @@ const getTeamMembers = (uid) => new Promise((resolve, reject) => {
 });
 
 const createTeamMember = (payload) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/roster.json`, {
+  fetch(`${endpoint}/rosters.json`, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const createTeamMember = (payload) => new Promise((resolve, reject) => {
 });
 
 const getFavoriteMembers = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/roster.json?orderBy"uid"andequalTo="${uid}"`, {
+  fetch(`${endpoint}/rosters.json?orderBy"uid"andequalTo="${uid}"`, {
     method:'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const getFavoriteMembers = () => new Promise((resolve, reject) => {
 });
 
 const updateTeamMember = (payload) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/roster/${payload.firebaseKey}.json`, {
+  fetch(`${endpoint}/rosters/${payload.firebaseKey}.json`, {
     method: 'PATCH',
     headers: {
         'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ const updateTeamMember = (payload) => new Promise((resolve, reject) => {
 });
 
 const deleteMember = (firebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/roster/${firebaseKey}.json`, {
+  fetch(`${endpoint}/rosters/${firebaseKey}.json`, {
     method: 'DELETE',
     headers: {
         'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const deleteMember = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 const getSingleMember = (firebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/roster/${firebaseKey}.json`, {
+  fetch(`${endpoint}/rosters/${firebaseKey}.json`, {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const getSingleMember = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 const getTheTeam = (uid) => new Promise((resolve, reject) => {
-    fetch(`${endpoint}/roster.json?orderBy"uid"andequalTo="${uid}"`, {
+    fetch(`${endpoint}/rosters.json?orderBy"uid"andequalTo="${uid}"`, {
         method:'GET',
         headers: {
           'Content-Type': 'application/json',
