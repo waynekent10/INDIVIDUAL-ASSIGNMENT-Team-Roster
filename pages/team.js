@@ -8,7 +8,7 @@ export default function GetTheTeam() {
   const [members, setMembers] = useState([]);
 
   const getAllTheTeam = () => {
-    getTheTeam(user.uid).then(setMembers);
+    getTheTeam(user).then(setMembers);
   };
 
   useEffect(() => {
