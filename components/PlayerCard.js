@@ -38,6 +38,7 @@ PlayerCard.propTypes = {
     image: PropTypes.string,
     name: PropTypes.string,
     role: PropTypes.string,
+    uid: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
 };
