@@ -11,9 +11,14 @@ const getTeamMembers = (uid) => new Promise((resolve, reject) => {
       'Content-Type': 'application/json',
     },
   })
-    .then((response) => response.json())
-    .then((data) => resolve(Object.values(data)))
-    .catch(reject);
+  .then((response) => response.json())
+  .then((data) => {
+    if (data) {
+      resolve(Object.values(data));
+    } else {
+      resolve([]);
+    }
+  }).catch(reject);
 });
 
 const createTeamMember = (payload) => new Promise((resolve, reject) => {
@@ -27,21 +32,6 @@ const createTeamMember = (payload) => new Promise((resolve, reject) => {
    .then((response) => response.json())
    .then((data) => resolve(data))
    .catch(reject);
-});
-
-const getFavoriteMembers = (uid) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/rosters.json?orderBy"uid"andequalTo="${uid}"`, {
-    method:'GET',
-    headers: {
-      'Content-Type': 'application/json',
-      },
-    })
-    .then((response) => response.json())
-    .then((data) => {
-        const favoriteMember = Object.values(data).filter((item) => item.favorite);
-        resolve(favoriteMember);
-    })
-    .catch(reject);
 });
 
 const updateTeamMember = (payload) => new Promise((resolve, reject) => {
@@ -81,26 +71,10 @@ const getSingleMember = (firebaseKey) => new Promise((resolve, reject) => {
    .catch(reject);
 });
 
-const getTheTeam = (uid) => new Promise((resolve, reject) => {
-    fetch(`${endpoint}/rosters.json?orderBy"uid"andequalTo="${uid}"`, {
-        method:'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          },
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            const roleplayers = Object.values(data).filter((item) => item.role);
-            resolve(roleplayers);
-        })
-        .catch(reject);
-    });
 export {
     getTeamMembers,
     createTeamMember,
-    getFavoriteMembers,
     updateTeamMember,
     deleteMember,
     getSingleMember,
-    getTheTeam
 };
