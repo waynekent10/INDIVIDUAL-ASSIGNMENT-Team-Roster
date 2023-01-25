@@ -11,7 +11,7 @@ const initalState = {
   image: '',
   name: '',
   role: '',
-  uid: '',
+  firebaseKey: '',
 };
 
 function MemberForm({ obj }) {
