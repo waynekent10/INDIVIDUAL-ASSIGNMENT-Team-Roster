@@ -12,9 +12,9 @@ export default function GetTheTeam() {
   };
 
   useEffect(() => {
-    getAllTheTeam();
+    getAllTheTeam(user.uid);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [user.uid]);
   return (
     <div>
       {members.map((member) => (

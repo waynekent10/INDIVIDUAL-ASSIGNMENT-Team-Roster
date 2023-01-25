@@ -29,7 +29,7 @@ const createTeamMember = (payload) => new Promise((resolve, reject) => {
    .catch(reject);
 });
 
-const getFavoriteMembers = () => new Promise((resolve, reject) => {
+const getFavoriteMembers = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/rosters.json?orderBy"uid"andequalTo="${uid}"`, {
     method:'GET',
     headers: {
