@@ -18,9 +18,7 @@ export default function ViewMember() {
         <Image src={memberDetails.image} alt={memberDetails.image} style={{ width: '300px' }} />
       </div>
       <div className="text-white ms-5 details">
-            <h5>
-          {memberDetails.name} {memberDetails.role}
-            </h5>
+        <h5>{memberDetails.name} {memberDetails.role}</h5>
       </div>
     </div>
   );
