@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Image } from 'react-bootstrap';
-import { ViewMemberDetails } from '../api/mergedData';
+import { ViewMemberDetails } from '../../api/mergedData';
 
 export default function ViewMember() {
   const [memberDetails, setMemberDetails] = useState({});
@@ -18,9 +18,9 @@ export default function ViewMember() {
         <Image src={memberDetails.image} alt={memberDetails.image} style={{ width: '300px' }} />
       </div>
       <div className="text-white ms-5 details">
-        <h5>
+            <h5>
           {memberDetails.name} {memberDetails.role}
-        </h5>
+            </h5>
       </div>
     </div>
   );

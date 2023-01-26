@@ -5,7 +5,7 @@ const endpoint = clientCredentials.databaseURL;
 
 //Get All members on the Roster
 const getTeamMembers = (uid) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/rosters.json?orderBy"uid"andequalTo="${uid}"`, {
+  fetch(`${endpoint}/rosters.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
