@@ -18,10 +18,10 @@ function PlayerCard({ memberObj, onUpdate }) {
       <Card.Body>
         <Card.Title>{memberObj.name}</Card.Title>
         <p className="card-text bold">{memberObj.role}</p>
-        <Link href={`/${memberObj.firebaseKey}`} passHref>
+        <Link href={`/player/${memberObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2">VIEW</Button>
         </Link>
-        <Link href={`/edit/${memberObj.firebaseKey}`} passHref>
+        <Link href={`player/edit/${memberObj.firebaseKey}`} passHref>
           <Button variant="info">EDIT</Button>
         </Link>
         <Button variant="danger" onClick={deleteThisMember} className="m-2">

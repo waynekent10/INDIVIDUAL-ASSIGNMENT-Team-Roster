@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { getSingleMember } from '../../api/teamData';
-import MemberForm from '../../components/forms/MemberForm';
+import { getSingleMember } from '../../../api/teamData';
+import MemberForm from '../../../components/forms/MemberForm';
 
 export default function EditMember() {
   const [editItem, setEditItem] = useState({});
