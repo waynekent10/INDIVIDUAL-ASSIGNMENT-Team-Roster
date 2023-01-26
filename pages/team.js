@@ -16,7 +16,7 @@ export default function TeamView() {
   }, []);
   return (
     <>
-      <h1>Your squad ${user.displayName}</h1>
+      <h1>Your squad {user.displayName}</h1>
       <div>
         {members.map((member) => (
           <PlayerCard key={member.firebaseKey} memberObj={member} onUpdate={getAllTeamMembers} />
