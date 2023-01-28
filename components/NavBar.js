@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import {
-  Navbar, Container, Nav, Button,
+  Navbar, Container, Nav, Button, Form,
 } from 'react-bootstrap';
 import { signOut } from '../utils/auth';
 
@@ -29,6 +29,15 @@ export default function NavBar() {
             <Link passHref href="profile">
               <Nav.Link>Profile</Nav.Link>
             </Link>
+            <Form className="d-flex">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
             <Button variant="danger" onClick={signOut}>Sign Out</Button>
           </Nav>
         </Navbar.Collapse>

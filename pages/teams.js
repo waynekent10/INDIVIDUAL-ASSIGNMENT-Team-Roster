@@ -17,9 +17,9 @@ export default function TeamsView() {
   return (
     <>
       <div>
-           {teams.map((team) => (
-              <TeamCard key={team.firebaseKey} teamObj={team} onUpdate={getAllOrgs} />
-            ))}
+        {teams.map((team) => (
+          <TeamCard key={team.firebaseKey} teamObj={team} onUpdate={getAllOrgs} />
+        ))}
       </div>
     </>
   );
