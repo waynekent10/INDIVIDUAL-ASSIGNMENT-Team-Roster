@@ -2,32 +2,32 @@
 {
     "-NMr2ssCDNGyyY2lKFuf": {
       "firebaseKey": "-NMr2ssCDNGyyY2lKFuf",
-      "team_name": "Lucie",
-      "public": true,
-      "uid": null
+      "team_name": "Lakers",
+      "private": true,
+      "uid": "NQsJ1X9NJdX0hJ2sz7ETgj6cU8k2"
     },
     "-NMr2ssF5VMoDzdItjaQ": {
       "firebaseKey": "-NMr2ssF5VMoDzdItjaQ",
       "team_name": "Grizzlies",
-      "public": false,
-      "uid": ""
+      "private": false,
+      "uid": "NQsJ1X9NJdX0hJ2sz7ETgj6cU8k2"
     },
     "-NMr2ssGzH1dUY44F8TN": {
       "firebaseKey":  "-NMr2ssGzH1dUY44F8TN",
       "team_name": "Knicks",
-      "public": false,
-      "uid": ""
+      "private": false,
+      "uid": "NQsJ1X9NJdX0hJ2sz7ETgj6cU8k2"
     },
     "-NMr2ssHpr77CkMI3owJ": {
       "firebaseKey": "-NMr2ssHpr77CkMI3owJ",
       "team_name": "Warriors",
-      "public": false,
-      "uid": ""
+      "private": false,
+      "uid": "NQsJ1X9NJdX0hJ2sz7ETgj6cU8k2"
     },
     "-NMr2ssKwoM3w8SO4nRV": {
       "firebaseKey": "-NMr2ssKwoM3w8SO4nRV",
       "team_name": "Nuggets",
-      "public": false,
-      "uid": ""
+      "private": false,
+      "uid": "NQsJ1X9NJdX0hJ2sz7ETgj6cU8k2"
     }
   }
