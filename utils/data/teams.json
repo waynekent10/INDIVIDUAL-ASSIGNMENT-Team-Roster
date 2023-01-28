@@ -1,0 +1,33 @@
+
+{
+    "-NMr2ssCDNGyyY2lKFuf": {
+      "firebaseKey": "-NMr2ssCDNGyyY2lKFuf",
+      "team_name": "Lucie",
+      "public": true,
+      "uid": null
+    },
+    "-NMr2ssF5VMoDzdItjaQ": {
+      "firebaseKey": "-NMr2ssF5VMoDzdItjaQ",
+      "team_name": "Grizzlies",
+      "public": false,
+      "uid": ""
+    },
+    "-NMr2ssGzH1dUY44F8TN": {
+      "firebaseKey":  "-NMr2ssGzH1dUY44F8TN",
+      "team_name": "Knicks",
+      "public": false,
+      "uid": ""
+    },
+    "-NMr2ssHpr77CkMI3owJ": {
+      "firebaseKey": "-NMr2ssHpr77CkMI3owJ",
+      "team_name": "Warriors",
+      "public": false,
+      "uid": ""
+    },
+    "-NMr2ssKwoM3w8SO4nRV": {
+      "firebaseKey": "-NMr2ssKwoM3w8SO4nRV",
+      "team_name": "Nuggets",
+      "public": false,
+      "uid": ""
+    }
+  }
