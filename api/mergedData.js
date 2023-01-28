@@ -1,4 +1,4 @@
-import { getSingleMember } from "./teamData";
+import { getSingleMember } from "./playerData";
 
 
 

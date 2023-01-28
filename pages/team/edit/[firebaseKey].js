@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { getSingleMember } from '../../../api/playerData';
-import MemberForm from '../../../components/forms/MemberForm';
+import { getSingleOrg } from '../../../api/teamsData';
+import TeamForm from '../../../components/forms/TeamForm';
 
-export default function EditMember() {
+export default function EditTeams() {
   const [editItem, setEditItem] = useState({});
   const router = useRouter();
 
   const { firebaseKey } = router.query;
 
   useEffect(() => {
-    getSingleMember(firebaseKey).then(setEditItem);
+    getSingleOrg(firebaseKey).then(setEditItem);
   }, [firebaseKey]);
 
-  return (<MemberForm obj={editItem} />);
+  return (<TeamForm obj={editItem} />);
 }

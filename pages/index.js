@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
-import { getTeamMembers } from '../api/teamData';
+import { getTeamMembers } from '../api/playerData';
 import { useAuth } from '../utils/context/authContext';
 import PlayerCard from '../components/PlayerCard';
 
