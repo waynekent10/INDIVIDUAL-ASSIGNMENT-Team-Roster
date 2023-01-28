@@ -71,8 +71,8 @@ const getSingleOrg = (firebaseKey) => new Promise((resolve, reject) => {
    .then((data) => resolve(data))
    .catch(reject);
 });
-const getPublicOrgs = (uid) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/teams.json`, {
+const getPrivateOrgs = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/teams.json?orderBy="uid"&equalTo"${uid}"`, {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -80,9 +80,12 @@ const getPublicOrgs = (uid) => new Promise((resolve, reject) => {
   })
   .then((response) => response.json())
   .then((data) => { resolve(data())
-  .catch(reject)
+    const filteredTeams = Object.values(data).filter((item) => item.team);
+    resolve(filteredTeams);
+  
   })
-})
+  .catch(reject);
+});
 
 export {
   getOrgs,
@@ -90,5 +93,5 @@ export {
   createOrgs,
   updateOrgs,
   deleteOrgs,
-  getPublicOrgs
+  getPrivateOrgs
 }
